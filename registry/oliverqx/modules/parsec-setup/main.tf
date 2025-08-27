@@ -25,7 +25,7 @@ resource "coder_script" "install_parsec" {
     sudo apt-get install -y wget
 
     echo "--- Downloading Parsec headless client ---"
-    wget "https://builds.parsec.app/parsec-linux-headless.deb" -O /tmp/parsec.deb
+    wget "https://builds.parsec.app/parsec-linux.deb" -O /tmp/parsec.deb
 
     echo "--- Installing Parsec ---"
     sudo dpkg -i /tmp/parsec.deb
